@@ -227,10 +227,10 @@
             //                    |  0  | BSPC| ESC |       | ENT |     |     |
 
             bindings = <
-&kp DK_plus   &kp DK_minus  &kp N7  &kp N8  &kp N9     &kp_dk_UNDER    &kp DK_sqt  &kp_dk_LBKT  &kp_dk_RBKT  &kp DK_flsh  &kp_dk_PIPE  &kp_dk_BLSH
-&kp DK_astrk  &kp DK_caret  &kp N4  &kp N5  &kp N6     &kp TILDE       &kp DK_dqt  &kp DK_lpar  &kp DK_rpar  &kp EXCL     &kp AT       &kp HASH
-&kp DK_qmark  &kp DK_equal  &kp N1  &kp N2  &kp N3     &kp LALT        &kp RALT    &kp_dk_LBRC  &kp_dk_RBRC  &kp DK_dllr  &kp PRCNT    &kp AMPS
-                                    &kp N0  &del_word  &trans          &trans      &none        &trans
+&kp DK_plus   &kp DK_minus  &kp N7  &kp N8  &kp N9  &kp_dk_UNDER    &kp DK_sqt  &kp_dk_LBKT  &kp_dk_RBKT  &kp DK_flsh  &kp_dk_PIPE  &kp_dk_BLSH
+&kp DK_astrk  &kp DK_caret  &kp N4  &kp N5  &kp N6  &kp TILDE       &kp DK_dqt  &kp DK_lpar  &kp DK_rpar  &kp EXCL     &kp AT       &kp HASH
+&kp DK_qmark  &kp DK_equal  &kp N1  &kp N2  &kp N3  &kp LALT        &kp RALT    &kp_dk_LBRC  &kp_dk_RBRC  &kp DK_dllr  &kp PRCNT    &kp AMPS
+                                    &kp N0  &none   &kp SPACE       &kp RET     &mo 1        &del_word
             >;
         };
 
@@ -242,10 +242,10 @@
             //                   |     |     | ESC |       | ENT | space|       |
 
             bindings = <
-&none  &kp TAB    &none     &kp UP    &none      &none      &none    &none      &kp C_VOL_UP  &none    &none  &none
-&none  &kp LSHFT  &kp LEFT  &kp DOWN  &kp RIGHT  &none      &none    &kp HOME   &kp C_VOL_DN  &kp END  &none  &none
-&none  &kp LCTRL  &none     &copy     &dk_paste  &none      &none    &none      &none         &none    &none  &none
-                            &none     &none      &kp ESC    &kp RET  &kp SPACE  &none
+&none  &kp TAB    &none     &kp UP    &none      &none      &none    &none     &kp C_VOL_UP  &none    &none  &none
+&none  &kp LSHFT  &kp LEFT  &kp DOWN  &kp RIGHT  &none      &none    &kp HOME  &kp C_VOL_DN  &kp END  &none  &none
+&none  &kp LCTRL  &none     &copy     &dk_paste  &none      &none    &none     &none         &none    &none  &none
+                            &none     &mo 2      &kp ESC    &kp RET  &none     &none
             >;
         };
     };
