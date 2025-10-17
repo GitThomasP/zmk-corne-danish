@@ -212,9 +212,9 @@
             //                    | GUI | LWR | SPC |   | ENT | SPACE| ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E      &kp R  &kp T        &kp Y    &kp U  &kp I          &kp O  &kp P         &none
-&none  &kp A  &kp S  &kp D      &kp F  &kp G        &kp H    &kp J  &kp K          &kp L  &none         &none
-&none  &kp Z  &kp X  &kp C      &kp V  &kp B        &kp N    &kp M  &none          &none  &kp KP_COMMA  &none
+&none  &kp Q  &kp W  &kp E      &kp R  &kp T        &kp Y    &kp U  &kp I          &kp O    &kp P         &none
+&none  &kp A  &kp S  &kp D      &kp F  &kp G        &kp H    &kp J  &kp K          &kp L    &kp LBKT      &none
+&none  &kp Z  &kp X  &kp C      &kp V  &kp B        &kp N    &kp M  &kp SEMI       &kp SQT  &kp KP_COMMA  &none
                      &sk LSHFT  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp BACKSPACE
             >;
         };
@@ -234,7 +234,7 @@
             >;
         };
 
-        dir {
+        dir_char {
             // -----------------------------------------------------------------------------------------
             // |     | tab |     |arup |     |     |       |     |      | volup |     |    |    |
             // |     |lshft|arlft|ardwn|arght|     |       |     | home | volup | end |    |    |
@@ -246,30 +246,6 @@
 &none  &kp LSHFT  &kp LEFT  &kp DOWN  &kp RIGHT  &none      &none    &kp HOME   &kp C_VOL_DN  &kp END  &none  &none
 &none  &kp LCTRL  &none     &copy     &dk_paste  &none      &none    &none      &none         &none    &none  &none
                             &none     &none      &kp ESC    &kp RET  &kp SPACE  &none
-            >;
-        };
-
-        linux_nav {
-            // -----------------------------------------------------------------------------------------
-            // |     | tab |     |arup |     |     |       |     |      | volup |     |    |    |
-            // |     |lshft|arlft|ardwn|arght|     |       |     | home | volup | end |    |    |
-            // |     |lctrl|     |     |     |     |       |     |      |       |     |    |    |
-            //                   |     |     | ESC |       | ENT | space|       |
-
-            bindings = <
-&none  &none  &none      &mod_up    &none       &none    &none  &none  &none  &none  &none  &none
-&none  &none  &mod_left  &mod_down  &mod_right  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none      &none      &none       &none    &none  &none  &none  &none  &none  &none
-                         &none      &none       &none    &none  &none  &none
-            >;
-        };
-
-        gaming {
-            bindings = <
-&kp TAB    &kp Q  &kp W  &kp E    &kp R      &kp T      &kp Y    &kp U      &kp UP     &kp O      &kp P     &kp LBKT
-&kp LSHFT  &kp A  &kp S  &kp D    &kp F      &kp G      &kp H    &kp LEFT   &kp DOWN   &kp RIGHT  &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C    &kp V      &kp B      &kp N    &kp M      &kp COMMA  &kp DOT    &kp LGUI  &kp LALT
-                         &kp ESC  &kp SPACE  &kp RET    &kp RET  &kp SPACE  &to 0
             >;
         };
     };
